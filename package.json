@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-uk-flood-monitoring",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "UK Environment Agency real-time flood-monitoring MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-aa0cc3261a8db8dc2d30e09a706e84f09675ffcd56f9a7d9e670cf5ac5df82eb",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "sourceHash": "v1-91ba8020160a28fa9a8ce815edb2b96cc1f22d81400205553fc5d349b6b52026",
+    "sourceCommit": "66a0692f029179984440cef6938cba7fdd41d66d"
   }
 }
