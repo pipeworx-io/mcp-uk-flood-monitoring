@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-uk-flood-monitoring",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "UK Environment Agency real-time flood-monitoring MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-uk-flood-monitoring": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "uk-flood-monitoring"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-uk-flood-monitoring.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/uk-flood-monitoring",
   "pipeworx": {
-    "sourceHash": "v1-91ba8020160a28fa9a8ce815edb2b96cc1f22d81400205553fc5d349b6b52026",
-    "sourceCommit": "66a0692f029179984440cef6938cba7fdd41d66d"
+    "mode": "gateway",
+    "slug": "uk-flood-monitoring",
+    "gatewaySlug": "uk-flood-monitoring",
+    "sourceHash": "v1-7725735ae9ece887ebc62dfdfaac170b851573e64e65c316cbb380e81c1b606b",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
